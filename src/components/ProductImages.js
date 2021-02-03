@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 
 const ProductImages = ({ images = [{ url: ''}] }) => {
-  const [main, setMain] = useState(images[0])
+  const [main, setMain] = useState(images[0].url)
+  // console.log(main)
   return (
     <div>
-      <img src={main.url} alt='main pic' className='main' />
+      <img src={main} alt='main pic' className='main' />
       <div className="gallery">
         {
           images.map((image, index) => {

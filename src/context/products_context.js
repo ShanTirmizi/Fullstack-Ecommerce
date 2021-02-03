@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useEffect, useReducer } from 'react'
 import reducer from '../reducers/products_reducer'
-import { products_url as url } from '../utils/constants'
+import { dogData as url } from '../utils/constants'
 import {
   SIDEBAR_OPEN,
   SIDEBAR_CLOSE,
@@ -40,9 +40,11 @@ export const ProductsProvider = ({ children }) => {
   const fetchProducts = async(url) => {
     dispatch({type: GET_PRODUCTS_BEGIN})
     try {
-      const response = await axios.get(url)
-      const products = response.data
-      dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products })
+      // const response = await axios.get(url)
+      // const products = response.data
+      console.log('url>>>>',url )
+
+      dispatch({ type: GET_PRODUCTS_SUCCESS, payload: url })
 
     } catch (error) {
       dispatch({type: GET_PRODUCTS_ERROR})
@@ -52,9 +54,14 @@ export const ProductsProvider = ({ children }) => {
   const fetchSingleProduct = async(url) => {
     dispatch({type: GET_SINGLE_PRODUCT_BEGIN});
     try {
-      const response = await axios.get(url);
-      const singleProduct = response.data
-      dispatch({type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct})
+      // const response = await axios.get(url);
+      // const singleProduct = response.data
+      // const itemPage = dogData.find((x) => x.id === id)
+      // const itemPage = url.find((x) => x.id === id)
+
+
+      console.log('single product>>>',url )
+      dispatch({type: GET_SINGLE_PRODUCT_SUCCESS, payload: url})
       
     } catch (error) {
       dispatch({type: GET_SINGLE_PRODUCT_ERROR})

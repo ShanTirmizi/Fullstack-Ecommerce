@@ -10,14 +10,16 @@ import { useUserContext } from '../context/user_context'
 import CartTotals from './CartTotals'
 import {BottomNavigation, BottomNavigationAction, makeStyles, AppBar} from '@material-ui/core'
 import { BsFillAlarmFill, BsFillAspectRatioFill, BsFillBagFill } from "react-icons/bs";
+import './Navbar.css'
 
 const useStyles = makeStyles({
   root: {
     // justifyContent: 'space-between',
   },
   navbar: {
-    margin: '1rem',
+    margin: '0 1rem',
     borderRadius: '20rem',
+    backgroundColor: 'none',
   }
 })
 const Nav = () => {
@@ -98,7 +100,7 @@ const Nav = () => {
     //       style={{fontSize: '10vh'}} label="Nearby" icon={<BsFillBagFill />} />
     //   </BottomNavigation>
     // </AppBar>
-    <AppBar position="fixed" color="primary" style={{top: "auto", bottom: 0}}>
+    <AppBar position="fixed" color="transparent" style={{top: "auto", bottom: '1rem'}}>
       <BottomNavigation
         style={{height: '10rem', display: 'flex', justifyContent: 'space-evenly'}}
         className={classes.navbar}
@@ -113,22 +115,18 @@ const Nav = () => {
          links.map((link) => {
           const { id, text, url,icon } = link
           return (
-            <Link to={url}>
+            <Link to={url} className='navbar__info'>
               <BottomNavigationAction key={id}   className={classes.root}
-              style={{fontSize: '4rem'}} label={text} icon={icon} />
-              {text}
+              style={{fontSize: '4rem'}} icon={icon} />
+              <p className='navbar__info__p'>
+                {text}
+              </p>
             </Link>
           )
-
-
-
          })
        }
       </BottomNavigation>
-
     </AppBar>
-
-
   ) 
 }
 

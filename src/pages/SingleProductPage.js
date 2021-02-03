@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
-import { single_product_url as url } from '../utils/constants'
+import { dogData as url } from '../utils/constants'
 import { formatPrice } from '../utils/helpers'
 import {
   Loading,
@@ -17,10 +17,14 @@ import { Link } from 'react-router-dom'
 const SingleProductPage = () => {
   const { id } = useParams();
   const history = useHistory()
-  const { single_product_loading: loading, single_product_error: error, single_product: product, fetchSingleProduct, } = useProductsContext()
-  
+  // const item1 = url.find((x) => x.id === id)
+  const { single_product_loading: loading, single_product_error: error, single_product: item1, fetchSingleProduct, } = useProductsContext()
+  // console.log('url id >>>>',url[0])
+  const Crypto = url.find((x) => x.id === id)
+  console.log('Crypto',Crypto)
+
   useEffect(() => {
-    fetchSingleProduct(`${url}${id}`)
+    fetchSingleProduct(Crypto)
   }, [id])
 
   useEffect(() => {
@@ -39,17 +43,17 @@ const SingleProductPage = () => {
     return <Error />
   }
 
-  const { name, price, description, stock, stars, reviews, id: sku, company, images } = product
+  const { name, price, description, stock, stars, reviews, id: sku, company, images } = item1
   
-  console.log(product)
+  console.log(item1)
   return (
     <div>
-      <PageHero title={name} product={product} />
+      <PageHero title={name} item1={item1} />
       <div className="section section-center page">
         <Link to='/products' className='btn'>
           back to products
         </Link>
-        <div className="product-center">
+        <div className="item1-center">
           <ProductImages images={images} />
           <section className='content'>
             <h2>{name}</h2>
@@ -57,6 +61,8 @@ const SingleProductPage = () => {
             <h5 className='price'> {formatPrice(price)}</h5>
             <p className='desc'> {description}</p>
             <p className='info'>
+            {stock > 0 && <AddToCart item1={item1} />}
+
               <span>Available : </span>
               {stock > 0 ? 'In stock' : 'out of stock'}
             </p>
@@ -69,7 +75,7 @@ const SingleProductPage = () => {
               {company}
             </p>
             <hr />
-            {stock > 0 && <AddToCart product={product} />}
+            {/* {stock > 0 && <AddToCart item1={item1} />} */}
           </section>
         </div>
       </div>
