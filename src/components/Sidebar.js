@@ -7,13 +7,14 @@ import { links } from '../utils/constants'
 import styled from 'styled-components'
 import CartButtons from './CartButtons'
 import { useUserContext } from '../context/user_context'
+import './Sidebar.css'
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext();
   const { myUser } = useUserContext()
 
   return (
-    <div>
+    <div className='sidebar__display'>
       <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
         <div className='sidebar-header'>
           <img src={logo} alt='logo' />
