@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useFilterContext } from '../context/filter_context'
 import { getUniqueValues, formatPrice } from '../utils/helpers'
 import { FaCheck } from 'react-icons/fa'
+import './Filters.css'
 
 const Filters = () => {
   const {
@@ -29,17 +30,20 @@ const Filters = () => {
     <div>
       <div className="content">
         <form onSubmit={(e) => e.preventDefault()}>
-          <div className="form-control">
-            <input
-              type='text'
-              name='text'
-              placeholder='search'
-              className='search-input'
-              value={text}
-              onChange={updateFilters}
-             />
+          <div className='heading'>
+            <h1>Ecom</h1>
+            <div className="form__control">
+              <input
+                type='text'
+                name='text'
+                placeholder='search'
+                className='search__input'
+                value={text}
+                onChange={updateFilters}
+              />
+            </div>
           </div>
-          <div className='form-control'>
+          {/* <div className='form__control'>
             <h5>category</h5>
             <div>
               {
@@ -57,64 +61,37 @@ const Filters = () => {
                 })
               }
             </div>
-          </div>
-          <div className="form-control">
-            <h5>company</h5>
-            <select name='company' value={company} onChange={updateFilters} className='company'>
-              {
-                companies.map((com, index) => {
-                  return (
-                    <option key={index} value={com}>{com}</option>
-                  )
-                })
-              }
-            </select>
-          </div>
-          <div className="form-control">
-            <h5>colors</h5>
-            <div className="colors">
-              {
-                colors.map((col, index) => {
-                  if (col === 'all') {
+          </div> */}
+          <div className='form__cat_price'>
+            <div className="form__control">
+              <h5 className="form__control__cat">Category</h5>
+              <select name='company' value={company} onChange={updateFilters} className='company'>
+                {
+                  companies.map((com, index) => {
                     return (
-                      <button key={index}
-                        name='color'
-                        onClick={updateFilters}
-                        data-color='all'
-                        className={`${
-                          color === 'all' ? 'all-btn active' : 'all-btn' 
-                         }`}>all</button>
+                      <option key={index} value={com}>{com}</option>
                     )
-                  }
-                  return (
-                    <button key={index} 
-                    name='color'
-                    style={{background: col}}
-                    className={`${
-                      color === col ? 'color-btn active' : 'color-btn'
-                    }`} 
-                    data-color={col}
-                    onClick={updateFilters} >
-                      {color === col ? <FaCheck /> : null}
-                    </button>
-                  )
-                })
-              }
+                  })
+                }
+              </select>
+            </div>
+            <div className="form__control">
+              <div className="form__control__price">
+                <h5>Price</h5>
+                <p className='price'>{formatPrice(price)}</p>
+              </div>
+              <input
+                type='range'
+                name='price'
+                className="form__control__slider"
+                onChange={updateFilters}
+                min={min_price}
+                max={max_price}
+                value={price}
+                />
             </div>
           </div>
-          <div className="form-control">
-            <h5>price</h5>
-            <p className='price'>{formatPrice(price)}</p>
-            <input
-              type='range'
-              name='price' 
-              onChange={updateFilters}
-              min={min_price}
-              max={max_price}
-              value={price}
-              />
-          </div>
-          <div className="form-control shipping">
+          {/* <div className="form__control shipping">
             <label htmlFor='shipping'>free shipping</label>
             <input
               type='checkbox'
@@ -122,9 +99,9 @@ const Filters = () => {
               id='shipping'
               onChange={updateFilters}
               checked={shipping} />
-          </div>
+          </div> */}
         </form>
-        <button type='button' className='clear-btn' onClick={clearFilters}>{' '} clear filters</button>
+        {/* <button type='button' className='clear__btn' onClick={clearFilters}>{' '} clear filters</button> */}
       </div>
     </div>
   ) 

@@ -1,0 +1,24 @@
+.product__container {
+    padding: 1rem;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.product__container footer {
+    display: flex;
+}
+
+.product__container:nth-child(odd) {
+    margin-left: 1rem;
+}
+
+.product__container:nth-child(even) {
+    margin-right: 1rem;
+}
+
+.product__container img {
+    width: 100%;
+    border-radius: 0.5rem;
+}

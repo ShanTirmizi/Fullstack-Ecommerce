@@ -1,0 +1,63 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h1 {
+    padding: 1rem;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.heading .form__control input {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 1.8rem;
+    margin-top: 1.2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.heading .form__control input:focus {
+    outline: none;
+}
+
+.form__cat_price {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    margin: 0 1rem 1rem;
+    border-radius: 1rem;
+    /* justify-content: space-evenly; */
+}
+.form__control__cat {
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+.form__cat_price select {
+    background-color: var(--color-3);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+select:focus {
+    outline: none;
+}
+
+.form__control__price {
+    display: flex;
+    justify-content: space-between;
+    /* width: 10%; */
+}
+
+.form__control__price h5 {
+    margin-left: 0.5rem;
+}
+
+.form__control__price .price {
+    margin-right: 0.5rem;
+}
