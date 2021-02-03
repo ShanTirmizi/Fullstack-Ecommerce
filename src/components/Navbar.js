@@ -100,7 +100,7 @@ const Nav = () => {
     //       style={{fontSize: '10vh'}} label="Nearby" icon={<BsFillBagFill />} />
     //   </BottomNavigation>
     // </AppBar>
-    <AppBar position="fixed" color="transparent" style={{top: "auto", bottom: '1rem'}}>
+    <AppBar position="fixed" color="transparent" style={{top: "auto", bottom: '0.3rem'}}>
       <BottomNavigation
         style={{height: '5rem', display: 'flex', justifyContent: 'space-evenly', backgroundColor: 'blue'}}
         className={classes.navbar}

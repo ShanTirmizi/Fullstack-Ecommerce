@@ -4,21 +4,31 @@
     color: var(--color-2);
     margin-top: 1rem;
     border-radius: 1rem;
+    height: 12rem;
+    width: 8.5rem;
 }
 
 .product__container footer {
     display: flex;
-}
+    justify-content: space-between;
 
+}
+/* 
 .product__container:nth-child(odd) {
     margin-left: 1rem;
 }
 
 .product__container:nth-child(even) {
     margin-right: 1rem;
+} */
+
+.product__container h5 {
+    margin-right: 0.2rem;
 }
 
 .product__container img {
+    /* width: 2rem; */
+    height: 8rem;
     width: 100%;
     border-radius: 0.5rem;
 }
