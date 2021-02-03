@@ -8,7 +8,7 @@ import './Product.css'
 const Product = ({ images, name, price, id }) => {
   return (
     <div className="product__container">
-      <Link to={`/products/${id}`} className='link'>
+      <Link  style={{ textDecoration: 'none', color: 'var(--color-2)'}} to={`/products/${id}`} className='link'>
         <div>
           <img  src={images[0].url} alt={name} />
             {/* <FaSearch /> */}
