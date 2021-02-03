@@ -5,9 +5,9 @@ import { FaCheck } from 'react-icons/fa'
 import { useCartContext } from '../context/cart_context'
 import AmountButtons from './AmountButtons'
 
-const AddToCart = ({ product }) => {
+const AddToCart = ({ item1 }) => {
   const { addToCart } = useCartContext()
-  const { id, stock, colors } = product
+  const { id, stock, colors } = item1
   const [mainColor, setMainColor] = useState(colors[0])
   const [amount, setAmount] = useState(1);
 
@@ -51,7 +51,7 @@ const AddToCart = ({ product }) => {
       </div>
       <div className='btn-container'>
         <AmountButtons amount={amount} increase={increase} decrease={decrease} />
-        <Link to='/cart' className='btn' onClick={() => addToCart(id, mainColor, amount, product)}>
+        <Link to='/cart' className='btn' onClick={() => addToCart(id, mainColor, amount, item1)}>
           add to cart
         </Link>
       </div>
