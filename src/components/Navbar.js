@@ -102,7 +102,7 @@ const Nav = () => {
     // </AppBar>
     <AppBar position="fixed" color="transparent" style={{top: "auto", bottom: '1rem'}}>
       <BottomNavigation
-        style={{height: '10rem', display: 'flex', justifyContent: 'space-evenly'}}
+        style={{height: '5rem', display: 'flex', justifyContent: 'space-evenly', backgroundColor: 'blue'}}
         className={classes.navbar}
         value={value}
         onChange={(event, newValue) => {
@@ -117,7 +117,7 @@ const Nav = () => {
           return (
             <Link to={url} className='navbar__info'>
               <BottomNavigationAction key={id}   className={classes.root}
-              style={{fontSize: '4rem'}} icon={icon} />
+              style={{fontSize: '1rem'}} icon={icon} />
               <p className='navbar__info__p'>
                 {text}
               </p>

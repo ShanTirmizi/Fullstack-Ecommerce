@@ -7,11 +7,13 @@ const ProductsPage = () => {
   // console.log(dogData)
   return (
     <main>
-      <PageHero title='products'/>
+      {/* <PageHero title='products'/> */}
+
       <div className='page'>
         <div className='section-center products'>
-          <Filters />
+          {/* <Filters /> */}
           <div>
+            <Filters />
             <Sort />
             <ProductList />
           </div>

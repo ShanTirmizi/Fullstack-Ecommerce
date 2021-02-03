@@ -1,14 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import Product from './Product'
+import './GridView.css'
 
 const GridView = ({ products }) => {
   return (
     <div>
-      <div className="products-container">
+      <div className="products__container">
         {
           products.map((product) => {
-            return <Product key={product.id} {...product} />
+            return <Product className="products__container__product" key={product.id} {...product} />
           })
         }
       </div>
