@@ -1,0 +1,14 @@
+.stars__reviews {
+    display: flex;
+    margin: 0 1rem;
+    justify-content: space-between;
+}
+
+.stars__reviews .reviews {
+    margin-top: 0;
+
+}
+
+.stars__reviews .stars {
+    margin-top: 0.1rem;
+}

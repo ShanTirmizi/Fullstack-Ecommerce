@@ -13,6 +13,7 @@ import {
 } from '../components'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import './SingleProductPage.css'
 
 const SingleProductPage = () => {
   const { id } = useParams();
@@ -48,34 +49,44 @@ const SingleProductPage = () => {
   console.log(item1)
   return (
     <div>
-      <PageHero title={name} item1={item1} />
-      <div className="section section-center page">
-        <Link to='/products' className='btn'>
-          back to products
+      {/* <PageHero title={name} item1={item1} /> */}
+      <div className='single__product__heading'>
+        <Link to='/products' className='single__product__link'>
+          <h3>back to products</h3>
         </Link>
-        <div className="item1-center">
+        <h3 className='single__product__name'>{name}</h3>
+
+      </div>
+      <div className="single__product__center">
+        {/* <Link to='/products' className='btn'>
+          back to products
+        </Link> */}
+        <div className="single__product__img">
           <ProductImages images={images} />
           <section className='content'>
-            <h2>{name}</h2>
+            {/* <h2>{name}</h2> */}
+            <div className='single__product__price'>
+              <h4>Price</h4>
+              <h4> {formatPrice(price)}</h4>
+            </div>
             <Stars stars={stars} reviews={reviews}/>
-            <h5 className='price'> {formatPrice(price)}</h5>
-            <p className='desc'> {description}</p>
-            <p className='info'>
-            {stock > 0 && <AddToCart item1={item1} />}
-
-              <span>Available : </span>
-              {stock > 0 ? 'In stock' : 'out of stock'}
-            </p>
-            <p className='info'>
-              <span>SKU : </span>
-              {sku}
-            </p>
-            <p className='info'>
-              <span>Brand : </span>
-              {company}
-            </p>
+            <p className='desc'>{description}</p>
+            <div className='single__product__info'>
+              <p className='info'>
+                <span>Available : </span>
+                {stock > 0 ? 'In stock' : 'out of stock'}
+              </p>
+              <p className='info'>
+                <span>SKU : </span>
+                {sku}
+              </p>
+              <p className='info'>
+                <span>Brand : </span>
+                {company}
+              </p>
+            </div>
             <hr />
-            {/* {stock > 0 && <AddToCart item1={item1} />} */}
+            {stock > 0 && <AddToCart item1={item1} />}
           </section>
         </div>
       </div>
