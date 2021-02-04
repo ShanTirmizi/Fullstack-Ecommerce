@@ -1,0 +1,36 @@
+.single__product__heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single__product__heading h3 {
+    padding: 1rem;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    border-radius: 1rem;
+}
+
+.single__product__link {
+    margin-left: 1rem;
+    text-decoration: none;
+
+}
+
+.single__product__name {
+    margin-right: 1rem;
+}
+
+.single__product__price {
+    display: flex;
+    margin: 0 1rem;
+    justify-content: space-between;    
+}
+
+.desc {
+    margin: 0 1rem;
+}
+
+.single__product__info {
+    margin-left: 1rem;
+}
+

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'
+import './Stars.css'
 const Stars = ({ stars, reviews }) => {
   const tempStars = Array.from({ length: 5 }, (_, index) => {
     const number = index + 0.5
@@ -19,7 +20,7 @@ const Stars = ({ stars, reviews }) => {
     )
   })
   return (
-    <div>
+    <div className='stars__reviews'>
       <div className="stars">{tempStars}</div>
       <p className='reviews'>({reviews} customer reviews)</p>
     </div>

@@ -1,0 +1,15 @@
+.amount__btsn {
+    display: flex;
+}
+
+.amount {
+    margin: 0 1rem;
+}
+
+.amount__btn {
+    background-color: var(--color-1);
+    border: none;
+    border-radius: 1rem;
+    color: var(--color-2);
+    width: 2rem;
+}

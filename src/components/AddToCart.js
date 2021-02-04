@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { FaCheck } from 'react-icons/fa'
 import { useCartContext } from '../context/cart_context'
 import AmountButtons from './AmountButtons'
+import './AddToCart.css'
 
 const AddToCart = ({ item1 }) => {
   const { addToCart } = useCartContext()
@@ -32,7 +33,7 @@ const AddToCart = ({ item1 }) => {
   }
   return (
     <div>
-      <div className="colors">
+      {/* <div className="colors">
         <span> colors :</span>
         <div>
           {
@@ -48,11 +49,11 @@ const AddToCart = ({ item1 }) => {
             })
           }
         </div>
-      </div>
-      <div className='btn-container'>
+      </div> */}
+      <div className='add__cart'>
         <AmountButtons amount={amount} increase={increase} decrease={decrease} />
-        <Link to='/cart' className='btn' onClick={() => addToCart(id, mainColor, amount, item1)}>
-          add to cart
+        <Link to='/cart' className='add__cart__btn' onClick={() => addToCart(id, mainColor, amount, item1)}>
+          Add To Cart
         </Link>
       </div>
     </div>
