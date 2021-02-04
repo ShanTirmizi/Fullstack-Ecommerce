@@ -5,22 +5,22 @@ import { BsFillAlarmFill, BsFillAspectRatioFill, BsFillBagFill } from "react-ico
 export const links = [
   {
     id: 1,
-    text: 'home',
-    url: '/',
+    text: 'Home',
+    url: '/products',
     icon: <BsFillAlarmFill />,
   },
   {
     id: 2,
-    text: 'about',
-    url: '/about',
+    text: 'Cart',
+    url: '/cart',
     icon: <BsFillAspectRatioFill/>,
   },
-  {
-    id: 3,
-    text: 'products',
-    url: '/products',
-    icon: <BsFillBagFill /> ,
-  },
+  // {
+  //   id: 3,
+  //   text: 'products',
+  //   url: '/products',
+  //   icon: <BsFillBagFill /> ,
+  // },
 ]
 
 export const services = [

@@ -1,6 +1,8 @@
 .heading {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+    /* justify-content: space-between; */
 }
 
 .heading h1 {
@@ -9,6 +11,17 @@
     color: var(--color-2);
     border-radius: 1rem;
     margin-left: 1rem;
+}
+
+.search__input {
+     /* width: auto; */
+    /* margin-right: 1rem;  */
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 1.8rem;
+    margin-top: 1.2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
 }
 
 .heading .form__control input {
@@ -36,7 +49,7 @@
 .form__control__cat {
     margin: 0.5rem 0 0.5rem 1rem;
 }
-.form__cat_price > select {
+.form__cat_price select {
     background-color: var(--color-3);
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 1rem;
@@ -52,12 +65,15 @@ select:focus {
     display: flex;
     justify-content: space-between;
     /* width: 10%; */
+    margin: 0 1rem;
 }
 
-.form__control__price > h5 {
-    margin-left: 0.5rem;
+.form__control__price h3 {
+    margin: 0.5rem 1rem;
+
 }
 
-.form__control__price .price {
-    margin-right: 0.5rem;
+.form__control__slider {
+    margin: 1rem 1.6rem;
+    width: 11rem;
 }

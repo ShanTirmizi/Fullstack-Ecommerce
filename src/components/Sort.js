@@ -16,7 +16,7 @@ const Sort = () => {
           <BsList />
         </button>
       </div> */}
-      <form>
+      <form className='sortby__content'>
         <label htmlFor='sort'>Sort by </label>
         <select name='sort' id='sort' className='sort__input' value={sort} onChange={updateSort}>
           <option value='price-lowest'>price (lowest)</option>
@@ -25,7 +25,7 @@ const Sort = () => {
           <option value='name-z'>name (z-a)</option>
         </select>
       </form>
-      <p>{products.length} products found</p>
+      <p className='sortby__amount'>{products.length} products found</p>
     </div>
   )
 }
