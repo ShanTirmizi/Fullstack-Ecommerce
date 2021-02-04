@@ -32,7 +32,7 @@ const Filters = () => {
         <form onSubmit={(e) => e.preventDefault()}>
           <div className='heading'>
             <h1>Ecom</h1>
-            <div className="form__control">
+            <div className="form__control__search">
               <input
                 type='text'
                 name='text'
@@ -64,7 +64,7 @@ const Filters = () => {
           </div> */}
           <div className='form__cat_price'>
             <div className="form__control">
-              <h5 className="form__control__cat">Category</h5>
+              <h3 className="form__control__cat">Category</h3>
               <select name='company' value={company} onChange={updateFilters} className='company'>
                 {
                   companies.map((com, index) => {
@@ -77,8 +77,8 @@ const Filters = () => {
             </div>
             <div className="form__control">
               <div className="form__control__price">
-                <h5>Price</h5>
-                <p className='price'>{formatPrice(price)}</p>
+                <h3>Price</h3>
+                <h3 className='price'>{formatPrice(price)}</h3>
               </div>
               <input
                 type='range'

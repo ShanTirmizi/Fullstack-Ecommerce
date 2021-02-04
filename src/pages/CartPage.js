@@ -3,19 +3,18 @@ import styled from 'styled-components'
 import { useCartContext } from '../context/cart_context'
 import { Link } from 'react-router-dom'
 import { CartContent, PageHero } from '../components'
+import './CartPage.css'
 
 const CartPage = () => {
   const { cart } = useCartContext()
   if (cart.length < 1) {
     return (
-      <div className='cart__page__empty'>
-        <div className="empty">
+        <div className="cart__page__empty">
           <h2>Your cart is empty</h2>
           <Link to='/products' className='empty__btn'>
-            fill it
+            Fill It
           </Link>
         </div>
-      </div>
     )
   }
   return (

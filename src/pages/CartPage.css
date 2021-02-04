@@ -1,0 +1,26 @@
+.cart__page__empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    margin: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 15rem;
+}
+
+.empty__btn {
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+
+
+}

@@ -9,11 +9,16 @@
 .navbar__info__p {
     font-size: 1rem;
     font-weight: bold;
-    color: black;
+    color: var(--color-2);
     margin-top: 0.2rem;
     margin-bottom: 0.8rem;
+    text-align: center;
 }
 
+/* .navbar__info__icon {
+    color: var(--color-2);
+    background-color: var(--color-2);
+} */
 /* .appbar {
     border-radius: 2rem;
     

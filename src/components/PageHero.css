@@ -5,7 +5,7 @@
     margin: 1rem 1rem;
 }
 
-.page__heading > h1 {
+.page__heading h1 {
     padding: 1rem;
     background-color: var(--color-1);
     color: var(--color-2);

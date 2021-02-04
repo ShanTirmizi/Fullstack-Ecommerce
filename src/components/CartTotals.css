@@ -23,7 +23,7 @@
     text-decoration: none;
 }
 
-.cart__total__btn > button {
+.cart__total__btn button {
     width: 90%;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
