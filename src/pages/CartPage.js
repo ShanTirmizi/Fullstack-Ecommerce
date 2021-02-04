@@ -8,10 +8,10 @@ const CartPage = () => {
   const { cart } = useCartContext()
   if (cart.length < 1) {
     return (
-      <div className='page-100'>
+      <div className='cart__page__empty'>
         <div className="empty">
           <h2>Your cart is empty</h2>
-          <Link to='/products' className='btn'>
+          <Link to='/products' className='empty__btn'>
             fill it
           </Link>
         </div>
@@ -20,8 +20,8 @@ const CartPage = () => {
   }
   return (
     <main>
-      <PageHero title='cart' />
-      <div className='page'>
+      {/* <PageHero title='cart' /> */}
+      <div className='cart__page'>
         <CartContent />
       </div>
     </main>
