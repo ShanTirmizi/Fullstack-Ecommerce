@@ -36,7 +36,7 @@
 .form__control__cat {
     margin: 0.5rem 0 0.5rem 1rem;
 }
-.form__cat_price select {
+.form__cat_price > select {
     background-color: var(--color-3);
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 1rem;
@@ -54,7 +54,7 @@ select:focus {
     /* width: 10%; */
 }
 
-.form__control__price h5 {
+.form__control__price > h5 {
     margin-left: 0.5rem;
 }
 

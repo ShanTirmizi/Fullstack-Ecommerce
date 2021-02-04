@@ -90,7 +90,7 @@ const CheckoutForm = () => {
     }
   }
   return (
-    <div>
+    <div className='stripe-container'>
       {succeeded ? (
         <article>
           <h4>Thank you</h4>
@@ -99,9 +99,15 @@ const CheckoutForm = () => {
         </article>
       ) : (
         <article>
-          <h4>Hello, {myUser && myUser.name}</h4>
-          <p>Your total is {formatPrice(total_amount)}</p>
-          <p>Test Card Number: 4242 4242 4242 4242</p>
+            <h4>Hello, {myUser && myUser.name}</h4>
+            <div className='stripe-container-total'>
+              <p>Your total: </p>
+              <p>{formatPrice(total_amount)}</p>
+            </div>
+            <div className='stripe-container-card'>
+              <p>Test Card Number: </p>
+              <p>4242 4242 4242 4242</p>
+            </div>
         </article>
       )}
       <form id='payment-form' onSubmit={handleSubmit}>
