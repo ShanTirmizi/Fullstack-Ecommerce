@@ -6,7 +6,7 @@
     margin: 0 1rem;
 }
 
-.cart__content__heading h1 {
+.cart__content__heading > h1 {
     background-color: var(--color-1);
     color: var(--color-2);
     text-align: center;

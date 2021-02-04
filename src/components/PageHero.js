@@ -1,17 +1,20 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import './PageHero.css'
+
 const PageHero = ({ title, product }) => {
   return (
     <div>
-      <div className='section-center'>
-        <h3>
-          <Link to='/'>Ecom</Link> / {title}
-
+      <div className='page__heading'>
+        <h1>
+          <Link to='/' style={{textDecoration: 'none', color: 'var(--color-2)'}}>Ecom</Link>
           {/* {
             product && <Link to='/products'>/Products</Link>
           } */}
-        </h3>
+        </h1>
+        <h1>
+          {title}
+        </h1>
       </div>
     </div>
   ) 
