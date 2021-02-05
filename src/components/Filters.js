@@ -30,7 +30,7 @@ const Filters = () => {
     <div>
       <div className="content">
         <form onSubmit={(e) => e.preventDefault()}>
-          {/* <div className='heading'>
+          <div className='heading'>
             <h1>Ecom</h1>
             <div className="form__control__search">
               <input
@@ -42,7 +42,7 @@ const Filters = () => {
                 onChange={updateFilters}
               />
             </div>
-          </div>  */}
+          </div> 
           {/* <div className='form__control'>
             <h5>category</h5>
             <div>

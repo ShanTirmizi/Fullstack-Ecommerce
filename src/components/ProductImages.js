@@ -5,8 +5,7 @@ import './ProductImages.css'
 const ProductImages = ({ images = [{ url:''}] }) => {
   const [main, setMain] = useState(images[0])
 
-  console.log('main>>' , main)
-
+  
   return (
     <div className='product__images'>
       <img src={main.url === '' ?  images[0].url : main.url} alt='main pic' className='product__main' />
