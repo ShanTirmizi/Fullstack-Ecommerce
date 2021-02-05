@@ -12,14 +12,6 @@ const CartContent = () => {
 
   return (
     <div className='cart__content'>
-      <div className='cart__content__heading'>
-        <h1>
-          Ecom
-        </h1>
-        <h1>
-          Cart
-        </h1>
-      </div>
       {/* <CartColumns /> */}
       {
         cart.map((item) => {
@@ -32,8 +24,10 @@ const CartContent = () => {
         })
       }
       <div className="cart__shopping">
-        <Link to='/products' className='cart__shopping__link'>
-          continue shopping
+        <Link to='/products' className='cart__shopping__btn'>
+          <button>
+             continue shopping
+          </button>
         </Link>
         <button type='button' className='cart__shopping__btn clear__btn' onClick={clearCart}>
           clear shopping cart

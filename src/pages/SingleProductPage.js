@@ -52,7 +52,7 @@ const SingleProductPage = () => {
       {/* <PageHero title={name} item1={item1} /> */}
       <div className='single__product__heading'>
         <Link to='/products' className='single__product__link'>
-          <h3>back to products</h3>
+          <h3>Back to products</h3>
         </Link>
         <h3 className='single__product__name'>{name}</h3>
 
@@ -70,6 +70,9 @@ const SingleProductPage = () => {
               <h4> {formatPrice(price)}</h4>
             </div>
             <Stars stars={stars} reviews={reviews}/>
+            <hr />
+            <h4 className='desc'>Description:</h4>
+            <br/>
             <p className='desc'>{description}</p>
             <div className='single__product__info'>
               <p className='info'>
@@ -86,10 +89,12 @@ const SingleProductPage = () => {
               </p>
             </div>
             <hr />
+            <br />
             {stock > 0 && <AddToCart item1={item1} />}
           </section>
         </div>
       </div>
+      <br />
     </div>
   ) 
 }
