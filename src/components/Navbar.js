@@ -9,7 +9,7 @@ import { useProductsContext } from '../context/products_context'
 import { useUserContext } from '../context/user_context'
 import CartTotals from './CartTotals'
 import {BottomNavigation, BottomNavigationAction, makeStyles, AppBar} from '@material-ui/core'
-import { BsFillAlarmFill, BsFillAspectRatioFill, BsFillBagFill } from "react-icons/bs";
+import { BsFillAlarmFill, BsFillAspectRatioFill, BsFillBagFill, BsFillPersonPlusFill, BsPersonDashFill } from "react-icons/bs";
 import './Navbar.css'
 import { FaMoneyCheck } from "react-icons/fa"
 import { useCartContext } from '../context/cart_context'
@@ -54,7 +54,7 @@ const Nav = () => {
             <>
               <Link  to={url} className='navbar__info'>
                 <BottomNavigationAction key={id}   className={classes.root}
-                style={{fontSize: '1rem'}} icon={icon} />
+                style={{fontSize: '1.5rem'}} icon={icon} />
                 <p className='navbar__info__p'>
                   {text}
                 </p>
@@ -66,7 +66,7 @@ const Nav = () => {
        }
           <Link to='/checkout' className='navbar__info'>
             <BottomNavigationAction className={classes.root}
-              style={{fontSize: '1rem'}} icon={<FaMoneyCheck />}/>
+              style={{fontSize: '1.5rem'}} icon={<FaMoneyCheck />}/>
               <p className='navbar__info__p'>
                 Checkout
               </p>
@@ -78,7 +78,7 @@ const Nav = () => {
             logout({returnTo:window.location.origin})}
           } className='navbar__info'>
               <BottomNavigationAction className={classes.root}
-              style={{fontSize: '1rem'}} icon={<FaMoneyCheck />}/>
+              style={{fontSize: '1.5rem'}} icon={<BsPersonDashFill />}/>
               <p className='navbar__info__p'>
                 Logout
               </p>
@@ -86,7 +86,7 @@ const Nav = () => {
             ) : (
               <Link className='navbar__info' onClick={loginWithRedirect}>
                 <BottomNavigationAction className={classes.root}
-                style={{fontSize: '1rem'}} icon={<FaMoneyCheck />}/>
+                style={{fontSize: '1.5rem'}} icon={<BsFillPersonPlusFill />}/>
                 <p className='navbar__info__p'>
                   Login
                 </p>

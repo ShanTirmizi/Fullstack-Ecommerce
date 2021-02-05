@@ -19,7 +19,7 @@ const CartPage = () => {
   }
   return (
     <main>
-      <PageHero title='cart' />
+      <PageHero title='Cart' />
       <div className='cart__page'>
         <CartContent />
       </div>
