@@ -7,7 +7,7 @@ const CheckoutPage = () => {
   const { cart } = useCartContext()
   return (
     <main>
-      <PageHero title='checkout' />
+      <PageHero title='Checkout' />
       <div className='page'>
         {
           cart.length < 1 ? (

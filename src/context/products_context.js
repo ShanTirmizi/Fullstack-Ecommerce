@@ -42,8 +42,6 @@ export const ProductsProvider = ({ children }) => {
     try {
       // const response = await axios.get(url)
       // const products = response.data
-      console.log('url>>>>',url )
-
       dispatch({ type: GET_PRODUCTS_SUCCESS, payload: url })
 
     } catch (error) {
@@ -58,9 +56,6 @@ export const ProductsProvider = ({ children }) => {
       // const singleProduct = response.data
       // const itemPage = dogData.find((x) => x.id === id)
       // const itemPage = url.find((x) => x.id === id)
-
-
-      console.log('single product>>>',url )
       dispatch({type: GET_SINGLE_PRODUCT_SUCCESS, payload: url})
       
     } catch (error) {

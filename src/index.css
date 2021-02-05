@@ -18,15 +18,16 @@ code {
 }
 
 :root {
-  --color-1: #1f1f1f;
-  --color-2: #1f1f1f;
+  --color-1: #EBEBEB;
+  --color-111: #1f1f1f;
+  --color-2: #EBEBEB;
   --color-3: #EBEBEB;
   --color-33: #C4C4C4;
 
   --color-4: #3e9fd7;
   --color-5: #4851d2;
-  --color-6: #f3c623;
-  --color-7: black;
+  --color-7: #f3c623;
+  --color-6: black;
   --color-8: #E50914;
   --color-9: #162447;
   --color-10: #056674;

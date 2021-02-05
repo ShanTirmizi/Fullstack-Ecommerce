@@ -1,19 +1,21 @@
 import React from 'react'
 import { GiCompass, GiDiamondHard, GiStabbedNote } from 'react-icons/gi'
-import { BsFillAlarmFill, BsFillAspectRatioFill, BsFillBagFill } from "react-icons/bs";
+import { ImCart } from "react-icons/im";
+import { IoStorefrontSharp } from "react-icons/io5";
+
 
 export const links = [
   {
     id: 1,
     text: 'Home',
     url: '/products',
-    icon: <BsFillAlarmFill />,
+    icon: <IoStorefrontSharp />,
   },
   {
     id: 2,
     text: 'Cart',
     url: '/cart',
-    icon: <BsFillAspectRatioFill/>,
+    icon: <ImCart/>,
   },
   // {
   //   id: 3,
