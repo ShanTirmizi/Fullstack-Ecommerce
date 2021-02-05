@@ -52,7 +52,7 @@ const SingleProductPage = () => {
       {/* <PageHero title={name} item1={item1} /> */}
       <div className='single__product__heading'>
         <Link to='/products' className='single__product__link'>
-          <h3>Back to products</h3>
+          <h3>Back to products</h3> 
         </Link>
         <h3 className='single__product__name'>{name}</h3>
 
