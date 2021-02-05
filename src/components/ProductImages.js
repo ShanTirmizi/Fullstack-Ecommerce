@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import './ProductImages.css'
+import { useParams } from 'react-router-dom';
+import {dogData} from '../utils/constants'
+
 
 const ProductImages = ({ images = [{ url:''}] }) => {
-  const [main, setMain] = useState(images[0])
+  let { id } = useParams();
+  const mainData = dogData.find((x) => x.id === id)
+  const mainImg = mainData.images[0]
 
-  
+  const [main, setMain] = useState(mainImg)
+
+
   return (
     <div className='product__images'>
       <img src={main.url === '' ?  images[0].url : main.url} alt='main pic' className='product__main' />
