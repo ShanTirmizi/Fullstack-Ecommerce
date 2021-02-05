@@ -7,9 +7,9 @@
 }
 
 .amount__btn {
-    background-color: var(--color-1);
+    background-color: var(--color-6);
     border: none;
     border-radius: 0.5rem;
-    color: var(--color-2);
+    color: var(--color-1);
     width: 1.5rem;
 }

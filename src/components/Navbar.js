@@ -39,7 +39,7 @@ const Nav = () => {
   return (
     <AppBar position="fixed" color="transparent" style={{top: "auto", bottom: '0.3rem'}}>
       <BottomNavigation
-        style={{height: '5rem', display: 'flex', justifyContent: 'space-evenly', backgroundColor: 'var(--color-1)'}}
+        style={{height: '5rem', display: 'flex', justifyContent: 'space-evenly', backgroundColor: 'var(--color-6)'}}
         className={classes.navbar}
         value={value}
         onChange={(event, newValue) => {

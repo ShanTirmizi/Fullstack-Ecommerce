@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
 import { loadStripe } from '@stripe/stripe-js'
 import {
   CardElement,
@@ -105,8 +104,8 @@ const CheckoutForm = () => {
               <p>{formatPrice(total_amount)}</p>
             </div>
             <div className='stripe-container-card'>
-              <p>Test Card Number: </p>
-              <p>4242 4242 4242 4242</p>
+              <p>Test Card Number:   </p>
+              <p className='stripe-container-card-num'>4242 4242 4242 4242</p>
             </div>
         </article>
       )}
@@ -116,7 +115,7 @@ const CheckoutForm = () => {
           options={cardStyle}
           onChange={handleChange}
         />
-        <button disabled={processing || disabled || succeeded} id='submit'>
+        <button className='stripe-btn' disabled={processing || disabled || succeeded} id='submit'>
           <span id='button-text'>
             {processing ? <div className='spinner' id='spinner'></div> : 'Pay'}
           </span>

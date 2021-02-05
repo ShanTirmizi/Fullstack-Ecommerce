@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import './ProductImages.css'
 
-const ProductImages = ({ images = [{ url: ''}] }) => {
+const ProductImages = ({ images = [{ url:''}] }) => {
   const [main, setMain] = useState(images[0].url)
   // console.log(main)
   return (

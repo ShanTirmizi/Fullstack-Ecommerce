@@ -16,7 +16,7 @@ const CartTotals = () => {
         <article className='cart__total__info'>
           <div className='cart__total__subtotal cart__total__sep'>
             <h5>
-            subtotal : 
+            Subtotal : 
             </h5>
             <h5>
               {formatPrice(total_amount)}
@@ -24,7 +24,7 @@ const CartTotals = () => {
           </div>
           <div className='cart__total__shipping cart__total__sep'>
             <h5>
-              shipping fee : 
+              Shipping fee : 
             </h5>
             <h5>
               {formatPrice(shipping_fee)}
@@ -32,7 +32,7 @@ const CartTotals = () => {
           </div>
           <div className='cart__total__order cart__total__sep'>
             <h4>
-              order total :{' '}
+              Order total :{' '}
             </h4>
             <h4>
               {formatPrice(total_amount + shipping_fee)}
@@ -41,13 +41,13 @@ const CartTotals = () => {
         </article>
         {
           myUser ? (
-            <Link to='/checkout' className='cart__total__btn'>
+            <Link to='/checkout' className='cart__total__btn__check cart__link'>
             <button>
               Proceed To Checkout
             </button>
             </Link>
           ) : (
-            <button onClick={loginWithRedirect} type='button' className='cart__total__btn'>login</button>
+            <button onClick={loginWithRedirect} type='button' className='cart__total__btn'>Login</button>
           )
         }
       </div>

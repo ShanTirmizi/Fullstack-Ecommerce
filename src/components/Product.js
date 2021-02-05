@@ -13,9 +13,9 @@ const Product = ({ images, name, price, id }) => {
           <img  src={images[0].url} alt={name} />
             {/* <FaSearch /> */}
         </div>
-        <footer>
+        <footer className="product__container__footer">
           <h5>{name}</h5>
-          <p>{formatPrice(price)}</p>
+          <h5>{formatPrice(price)}</h5>
         </footer>
       </Link>
     </div>

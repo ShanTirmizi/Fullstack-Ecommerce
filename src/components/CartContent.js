@@ -31,7 +31,6 @@ const CartContent = () => {
           ) 
         })
       }
-      <hr />
       <div className="cart__shopping">
         <Link to='/products' className='cart__shopping__link'>
           continue shopping
