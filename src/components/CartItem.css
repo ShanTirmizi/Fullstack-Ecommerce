@@ -24,8 +24,10 @@
 }
 .cart__item__content img {
     width: 6rem;
+    height: 5rem;
     border-radius: 1rem;
     box-shadow: var(--shadow-1);
+    object-fit: cover;
 }
 
 .cart__item__content__info {
