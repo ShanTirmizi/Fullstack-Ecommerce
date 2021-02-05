@@ -28,7 +28,7 @@ const CartItem = ({ id, image, name, color, price, amount }) => {
       {/* <h5 className='price'>{formatPrice(price)}</h5> */}
       <div className="cart__item__end">
         <div className="cart__item__end__amount">
-          <AmountButtons amount={amount} increase={increase} decrease={decrease} />
+          <AmountButtons className="cart__item__end__amount__btn" amount={amount} increase={increase} decrease={decrease} />
           <div className="cart__item__end__total">
             <h5>Total: </h5>
             <h5 className='subtotal'>{formatPrice(price * amount)}</h5>

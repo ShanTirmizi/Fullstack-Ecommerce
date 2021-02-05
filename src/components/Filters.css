@@ -3,11 +3,13 @@
     grid-template-columns: 1fr 2fr;
     grid-gap: 1rem;
     /* justify-content: space-between; */
+    box-shadow: var(--shadow-2);
+
 }
 
 .heading h1 {
     padding: 1rem;
-    background-color: var(--color-1);
+    background-color: var(--color-6);
     color: var(--color-2);
     border-radius: 1rem;
     margin-left: 1rem;
@@ -16,16 +18,17 @@
 .search__input {
      /* width: auto; */
     /* margin-right: 1rem;  */
-    background-color: var(--color-1);
+    background-color: var(--color-6);
     color: var(--color-2);
     padding: 1.8rem;
     margin-top: 1.2rem;
     border-radius: 1rem;
     margin-right: 1rem;
+    border: none;
 }
 
 .heading .form__control input {
-    background-color: var(--color-1);
+    background-color: var(--color-6);
     color: var(--color-2);
     padding: 1.8rem;
     margin-top: 1.2rem;
@@ -40,9 +43,9 @@
 .form__cat_price {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    background-color: var(--color-1);
+    background-color: var(--color-6);
     color: var(--color-2);
-    margin: 0 1rem 1rem;
+    margin: 0.5rem 1rem 1rem;
     border-radius: 1rem;
     /* justify-content: space-evenly; */
 }
@@ -51,8 +54,10 @@
 }
 .form__cat_price select {
     background-color: var(--color-3);
-    padding: 1rem 1rem 1rem 1rem;
+    /* color: var(--color-2); */
+    padding: 0.5rem;
     border-radius: 1rem;
+    border: none;
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -75,5 +80,139 @@ select:focus {
 
 .form__control__slider {
     margin: 1rem 1.6rem;
-    width: 11rem;
+      
 }
+
+
+.form__control__slider {
+    -webkit-appearance: none;
+    vertical-align: middle;
+    outline: none;
+    border: none;
+    padding: 0;
+    background: none;
+    width: 80%;
+  }
+  
+  .form__control__slider::-webkit-slider-runnable-track {
+    background-color: var(--color-11);
+    height: 1rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+  }
+  
+  
+  .form__control__slider::-moz-form__control__slider-track {
+    background-color: var(--color-11);
+    height: 6px;
+    border-radius: 3px;
+    border: none;
+  }
+  
+  .form__control__slider::-ms-track {
+    color: transparent;
+    border: none;
+    background: none;
+    height: 6px;
+  }
+  
+  .form__control__slider::-ms-fill-lower {
+    background-color: var(--color-11);
+    border-radius: 3px;
+
+  }
+  
+  .form__control__slider::-ms-fill-upper {
+    background-color: var(--color-11);
+    border-radius: 3px;
+
+  }
+  
+  .form__control__slider::-ms-tooltip {
+    display: none; /* display and visibility only */
+  }
+  
+  .form__control__slider::-moz-form__control__slider-thumb {
+    border-radius: 20px;
+    height: 18px;
+    width: 18px;
+    border: none;
+    background: none;
+    background-color: var(--color-11);
+
+  }
+  
+  .form__control__slider:active::-moz-form__control__slider-thumb {
+    outline: none;
+  }
+  
+  .form__control__slider::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    border-radius: 100%;
+    background-color: var(--color-11);
+
+    height: 18px;
+    width: 18px;
+    margin-top: -7px;
+  }
+  
+  
+  .form__control__slider:active::-webkit-slider-thumb {
+    outline: none;
+  }
+  
+  .form__control__slider::-ms-thumb {
+    border-radius: 100%;
+    background-color: var(--color-11);
+    height: 18px;
+    width: 18px;
+    border: none;
+
+  }
+  
+  .form__control__slider:active::-ms-thumb {
+    border: none;
+  }
+  
+
+
+    .form__control__slider::-webkit-slider-runnable-track {
+      background-color: var(--color-2);
+
+    }
+  
+  
+    .form__control__slider::-moz-form__control__slider-track {
+      background-color: var(--color-2);
+
+      border: none;
+    }
+  
+    .form__control__slider::-ms-fill-lower {
+      background-color: var(--color-2);
+
+    }
+  
+    .form__control__slider::-ms-fill-upper {
+      background-color: var(--color-2);
+
+    }
+  
+    .form__control__slider::-webkit-slider-thumb {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: var(--color-11);
+
+    }
+  
+    .form__control__slider::-moz-form__control__slider-thumb {
+      background-color: var(--color-11);
+
+    }
+  
+    .form__control__slider::-ms-thumb {
+        background-color: var(--color-11);
+    }
+
+  

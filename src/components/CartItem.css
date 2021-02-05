@@ -25,6 +25,7 @@
 .cart__item__content img {
     width: 6rem;
     border-radius: 1rem;
+    box-shadow: var(--shadow-1);
 }
 
 .cart__item__content__info {
@@ -65,23 +66,24 @@
     /* align-items: center; */
     /* align-self: center; */
     /* justify-content: space-between; */
+    
 }
 
-.cart__item__end__amount {
-    /* display: flex; */
-
-
-
-}
 
 .cart__item__end__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0.5rem;
     height: 2.5rem;
-    margin: 0 1rem;
-    background-color: var(--color-1);
-    color: var(--color-2);
+    margin: 1.2rem 1rem 1.2rem 1.2rem;
+    background-color: var(--color-6);
+    color: var(--color-1);
     border-radius: 0.5rem;
     border: none;
+    box-shadow: var(--shadow-1);
+
 }
 
 .cart__item__end__total {
