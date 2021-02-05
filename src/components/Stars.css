@@ -11,4 +11,5 @@
 
 .stars__reviews .stars {
     margin-top: 0.1rem;
+    color: var(--color-6);
 }

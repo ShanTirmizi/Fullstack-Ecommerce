@@ -5,9 +5,10 @@
 
 .single__product__heading h3 {
     padding: 1rem;
-    background-color: var(--color-1);
-    color: var(--color-2);
+    background-color: var(--color-6);
+    color: var(--color-1);
     border-radius: 1rem;
+    font-size: 1rem;
 }
 
 .single__product__link {

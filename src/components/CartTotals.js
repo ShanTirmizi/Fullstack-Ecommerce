@@ -15,20 +15,20 @@ const CartTotals = () => {
       <div className='cart__total'>
         <article className='cart__total__info'>
           <div className='cart__total__subtotal cart__total__sep'>
-            <h5>
+            <h4>
             Subtotal : 
-            </h5>
-            <h5>
+            </h4>
+            <h4>
               {formatPrice(total_amount)}
-            </h5>
+            </h4>
           </div>
           <div className='cart__total__shipping cart__total__sep'>
-            <h5>
+            <h4>
               Shipping fee : 
-            </h5>
-            <h5>
+            </h4>
+            <h4>
               {formatPrice(shipping_fee)}
-            </h5>
+            </h4>
           </div>
           <div className='cart__total__order cart__total__sep'>
             <h4>
