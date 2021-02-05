@@ -207,12 +207,11 @@ select:focus {
     }
   
     .form__control__slider::-moz-form__control__slider-thumb {
-      background-color: var(--color-11);
-
+      background-color: var(--color-2);
     }
   
     .form__control__slider::-ms-thumb {
-        background-color: var(--color-11);
+      background-color: var(--color-2);
     }
 
   

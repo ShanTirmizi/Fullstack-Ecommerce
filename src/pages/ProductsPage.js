@@ -7,7 +7,7 @@ const ProductsPage = () => {
   // console.log(dogData)
   return (
     <main>
-      <PageHero title='Home'/>
+      {/* <PageHero title='Home'/> */}
       <div className='page'>
         <div className='section-center products'>
           {/* <Filters /> */}

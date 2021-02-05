@@ -42,7 +42,7 @@ const Filters = () => {
                 onChange={updateFilters}
               />
             </div>
-          </div> */}
+          </div>  */}
           {/* <div className='form__control'>
             <h5>category</h5>
             <div>

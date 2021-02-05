@@ -5,9 +5,12 @@ import './ProductImages.css'
 const ProductImages = ({ images = [{ url:''}] }) => {
   const [main, setMain] = useState(images[0])
 
+  console.log('main>>' , main)
+
   return (
     <div className='product__images'>
-      <img src={main.url == '' ?  images[0].url : main.url} alt='main pic' className='product__main' />
+      <img src={main.url === '' ?  images[0].url : main.url} alt='main pic' className='product__main' />
+      {/* <img src={images[0].url} alt='main pic' className='product__main' /> */}
       <div className="product__secondary">
         {
           images.slice(0,3).map((image, index) => {
