@@ -49,7 +49,7 @@
     border-radius: 0.5rem;
     background-color: var(--color-11);
     font-size: 1.5rem;
-    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow-3);
 }
 
 .cart__total__btn__check button {
