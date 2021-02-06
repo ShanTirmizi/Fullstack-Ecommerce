@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import { Navbar, Sidebar, Footer } from './components'
 import { HomePage, AboutPage, AuthWrapper, CartPage, CheckoutPage, ErrorPage, PrivateRoute, ProductsPage, SingleProductPage } from './pages/index';
 
@@ -11,7 +11,9 @@ function App() {
         <Sidebar />
         <Switch>
           <Route exact path='/'>
-            <HomePage />
+            <Redirect to='/products'>
+              <HomePage />
+            </Redirect>
           </Route>
           <Route exact path='/about'>
             <AboutPage />

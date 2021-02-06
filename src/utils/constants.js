@@ -56,7 +56,7 @@ export const services = [
 export const dogData = [
   {
   "id": "recZkNf2kwmdBcqd0",
-  "name": "Dog",
+  "name": "White Vase",
   "price": 25999,
   "images": [
     {
@@ -185,7 +185,7 @@ export const dogData = [
   "#00ff00",
   "#0000ff"
   ],
-  "company": "marcos",
+  "company": "Vase",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "office",
   "shipping": true,
@@ -195,7 +195,7 @@ export const dogData = [
   },
   {
   "id": "recEHmzvupvT8ZONH",
-  "name": "albany sectional",
+  "name": "White Chair",
   "price": 109999,
     "images": [
     {
@@ -323,7 +323,7 @@ export const dogData = [
   "#000",
   "#ffb900"
   ],
-  "company": "liddy",
+  "company": "Chair",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "living room",
   "stock": 2,
@@ -332,7 +332,7 @@ export const dogData = [
   },
   {
   "id": "rec5NBwZ5zCD9nfF0",
-  "name": "albany table",
+  "name": "Dark Blub",
   "price": 309999,
     "images": [
     {
@@ -460,7 +460,7 @@ export const dogData = [
   "#ffb900",
   "#0000ff"
   ],
-  "company": "liddy",
+  "company": "Chair",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "kitchen",
   "stock": 4,
@@ -469,7 +469,7 @@ export const dogData = [
   },
   {
   "id": "recd1jIVIEChmiwhe",
-  "name": "armchair",
+  "name": "Yellow Blub",
   "price": 12599,
     "images": [
     {
@@ -598,7 +598,7 @@ export const dogData = [
   "#00ff00",
   "#0000ff"
   ],
-  "company": "marcos",
+  "company": "Blub",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "bedroom",
   "shipping": true,
@@ -608,7 +608,7 @@ export const dogData = [
   },
   {
   "id": "recoM2MyHJGHLVi5l",
-  "name": "bar stool",
+  "name": "Grey Vase",
   "price": 4099,
     "images": [
     {
@@ -735,7 +735,7 @@ export const dogData = [
   "colors": [
   "#000"
   ],
-  "company": "liddy",
+  "company": "Vase",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "dining",
   "shipping": true,
@@ -745,7 +745,7 @@ export const dogData = [
   },
   {
   "id": "recotY5Nh00DQFdkm",
-  "name": "dining table",
+  "name": "Snow Vase",
   "price": 42999,
     "images": [
     {
@@ -874,7 +874,7 @@ export const dogData = [
   "#0000ff",
   "#ff0000"
   ],
-  "company": "ikea",
+  "company": "Vase",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "dining",
   "shipping": true,
@@ -884,7 +884,7 @@ export const dogData = [
   },
   {
   "id": "rec1Ntk7siEEW9ha1",
-  "name": "emperor bed",
+  "name": "Great Vase",
   "price": 23999,
     "images": [
     {
@@ -1012,7 +1012,7 @@ export const dogData = [
   "#0000ff",
   "#000"
   ],
-  "company": "ikea",
+  "company": "Vase",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "bedroom",
   "shipping": true,
@@ -1022,7 +1022,7 @@ export const dogData = [
   },
   {
   "id": "recNZ0koOqEmilmoz",
-  "name": "entertainment center",
+  "name": "Round Sofa",
   "price": 59999,
     "images": [
     {
@@ -1151,7 +1151,7 @@ export const dogData = [
   "#000",
   "#ff0000"
   ],
-  "company": "caressa",
+  "company": "Sofa",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "living room",
   "shipping": true,
@@ -1161,7 +1161,7 @@ export const dogData = [
   },
   {
   "id": "recrfxv3EwpvJwvjq",
-  "name": "high-back bench",
+  "name": "Work Desk",
   "price": 39999,
     "images": [
     {
@@ -1290,7 +1290,7 @@ export const dogData = [
   "#000",
   "#00ff00"
   ],
-  "company": "ikea",
+  "company": "Desk",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "office",
   "shipping": true,
@@ -1300,7 +1300,7 @@ export const dogData = [
   },
   {
   "id": "recoW8ecgjtKx2Sj2",
-  "name": "leather chair",
+  "name": "Glass Vase",
   "price": 20099,
     "images": [
     {
@@ -1429,7 +1429,7 @@ export const dogData = [
   "#ffb900",
   "#00ff00"
   ],
-  "company": "caressa",
+  "company": "Vase",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "bedroom",
   "stock": 5,
@@ -1439,7 +1439,7 @@ export const dogData = [
   },
   {
   "id": "recEOA6qtDag1hRbU",
-  "name": "leather sofa",
+  "name": "Wood Chair",
   "price": 99999,
     "images": [
     {
@@ -1567,7 +1567,7 @@ export const dogData = [
   "#00ff00",
   "#0000ff"
   ],
-  "company": "caressa",
+  "company": "Chair",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "office",
   "stock": 6,
@@ -1576,7 +1576,7 @@ export const dogData = [
   },
   {
   "id": "recoAJYUCuEKxcPSr",
-  "name": "modern bookshelf",
+  "name": "Stone Table",
   "price": 31999,
     "images": [
     {
@@ -1706,7 +1706,7 @@ export const dogData = [
   "#ff0000",
   "#00ff00"
   ],
-  "company": "caressa",
+  "company": "Table",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "kids",
   "stock": 2,
@@ -1715,7 +1715,7 @@ export const dogData = [
   },
   {
   "id": "recQ0fMd8T0Vk211E",
-  "name": "modern poster",
+  "name": "Modern Blub",
   "price": 3099,
     "images": [
     {
@@ -1842,7 +1842,7 @@ export const dogData = [
   "colors": [
   "#000"
   ],
-  "company": "liddy",
+  "company": "Blub",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "living room",
   "shipping": true,
@@ -1852,7 +1852,7 @@ export const dogData = [
   },
   {
   "id": "rec7CjDWKRgNQtrKe",
-  "name": "shelf",
+  "name": "Book Desk",
   "price": 30999,
     "images": [
     {
@@ -1979,7 +1979,7 @@ export const dogData = [
   "colors": [
   "#00ff00"
   ],
-  "company": "ikea",
+  "company": "Desk",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "living room",
   "stock": 5,
@@ -1988,7 +1988,7 @@ export const dogData = [
   },
   {
   "id": "recF0KpwlkF7e8kXO",
-  "name": "simple chair",
+  "name": "Brown Blub",
   "price": 109999,
     "images": [
     {
@@ -2115,7 +2115,7 @@ export const dogData = [
   "colors": [
   "#0000ff"
   ],
-  "company": "liddy",
+  "company": "Blub",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "living room",
   "shipping": true,
@@ -2125,7 +2125,7 @@ export const dogData = [
   },
   {
   "id": "recs5BSVU3qQrOj4E",
-  "name": "sofa set",
+  "name": "Orange Blub",
   "price": 129999,
     "images": [
     {
@@ -2253,7 +2253,7 @@ export const dogData = [
   "#00ff00",
   "#ffb900"
   ],
-  "company": "marcos",
+  "company": "Blub",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "living room",
   "shipping": true,
@@ -2263,7 +2263,7 @@ export const dogData = [
   },
   {
   "id": "recroK1VD8qVdMP5H",
-  "name": "suede armchair",
+  "name": "Pink Chair",
   "price": 15999,
     "images": [
     {
@@ -2390,7 +2390,7 @@ export const dogData = [
   "colors": [
   "#ffb900"
   ],
-  "company": "caressa",
+  "company": "Chair",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "office",
   "stock": 2,
@@ -2399,7 +2399,7 @@ export const dogData = [
   },
   {
   "id": "rec7JInsuCEHgmaGe",
-  "name": "utopia sofa",
+  "name": "Round Table",
   "price": 79999,
     "images": [
     {
@@ -2528,7 +2528,7 @@ export const dogData = [
   "#ff0000",
   "#00ff00"
   ],
-  "company": "liddy",
+  "company": "Table",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "living room",
   "stock": 7,
@@ -2537,7 +2537,7 @@ export const dogData = [
   },
   {
   "id": "rec3jeKnhInKHJuz2",
-  "name": "vase table",
+  "name": "Sofa Set",
   "price": 120999,
     "images": [
     {
@@ -2665,7 +2665,7 @@ export const dogData = [
   "colors": [
   "#ff0000"
   ],
-  "company": "marcos",
+  "company": "Sofa",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "office",
   "stock": 2,
@@ -2674,7 +2674,7 @@ export const dogData = [
   },
   {
   "id": "recv2ohxljlK2FZO7",
-  "name": "wooden bed",
+  "name": "Grey Sofa",
   "price": 250099,
     "images": [
     {
@@ -2802,7 +2802,7 @@ export const dogData = [
   "#000",
   "#ffb900"
   ],
-  "company": "ikea",
+  "company": "Sofa",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "bedroom",
   "stock": 1,
@@ -2811,7 +2811,7 @@ export const dogData = [
   },
   {
   "id": "recJIjREF3dlFi3sR",
-  "name": "wooden desk",
+  "name": "Long Blub",
   "price": 150999,
     "images": [
     {
@@ -2938,7 +2938,7 @@ export const dogData = [
   "colors": [
   "#000"
   ],
-  "company": "ikea",
+  "company": "Blub",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "office",
   "shipping": true,
@@ -2948,7 +2948,7 @@ export const dogData = [
   },
   {
   "id": "recm7wC8TBVdU9oEL",
-  "name": "wooden desk",
+  "name": "Small Sofa",
   "price": 40099,
     "images": [
     {
@@ -3076,7 +3076,7 @@ export const dogData = [
   "#0000ff",
   "#00ff00"
   ],
-  "company": "ikea",
+  "company": "Sofa",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "office",
   "stock": 4,
@@ -3085,7 +3085,7 @@ export const dogData = [
   },
   {
   "id": "rectfNsySwAJeWDN2",
-  "name": "wooden table",
+  "name": "Red Chair",
   "price": 234999,
     "images": [
     {
@@ -3214,7 +3214,7 @@ export const dogData = [
   "#ffb900",
   "#ff0000"
   ],
-  "company": "caressa",
+  "company": "Chair",
   "description": "Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.",
   "category": "kitchen",
   "shipping": true,
