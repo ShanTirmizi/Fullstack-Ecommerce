@@ -19,13 +19,14 @@ import { useCartContext } from '../context/cart_context'
 const useStyles = makeStyles({
   root: {
     // justifyContent: 'space-between',
-    color: 'var(--color-2)',
+    color: 'var(--color-6)',
   },
   navbar: {
-    margin: '0 1rem',
-    borderRadius: '1rem',
+    // margin: '0 1rem',
+    // borderRadius: '5rem',
     // borderTopRightRadius: '0.5rem',
     // borderTopLeftRadius: '0.5rem',
+    // boxShadow: 'var(--shadow-3)',
 
     backgroundColor: 'none',
   }
@@ -37,9 +38,9 @@ const Nav = () => {
   const { myUser, loginWithRedirect, logout } = useUserContext()
   const [ value, setValue] = useState(0)
   return (
-    <AppBar position="fixed" color="transparent" style={{top: "auto", bottom: '0.3rem'}}>
+    <AppBar position="fixed" color="transparent" style={{top: "auto", bottom: '0'}}>
       <BottomNavigation
-        style={{height: '5rem', display: 'flex', justifyContent: 'space-evenly', backgroundColor: 'var(--color-6)'}}
+        style={{height: '5rem', display: 'flex', justifyContent: 'space-evenly', backgroundColor: 'var(--color-1)'}}
         className={classes.navbar}
         value={value}
         onChange={(event, newValue) => {

@@ -4,12 +4,17 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
+
+}
+
+.appbar {
+    box-shadow: var(--shadow-3);
 }
 
 .navbar__info__p {
     font-size: 1rem;
     font-weight: bold;
-    color: var(--color-2);
+    color: var(--color-6);
     margin-top: 0.2rem;
     margin-bottom: 0.8rem;
     text-align: center;

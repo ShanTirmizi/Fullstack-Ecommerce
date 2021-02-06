@@ -16,7 +16,7 @@ const CartItem = ({ id, image, name, color, price, amount }) => {
   return (
     <div className="cart__item">
       <div className="cart__item__content">
-        <img src={image} alt={name} />
+        <img className="cart__item__content__img" src={image} alt={name} />
         <div className="cart__item__content__info">
           <h5 className='name'>{name}</h5>
           {/* <p className='color'>

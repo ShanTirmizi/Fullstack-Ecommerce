@@ -4,10 +4,10 @@
     /* justify-content: center; */
     /* align-items: ; */
     margin: 1rem 1rem;
-    background-color: var(--color-6);
-    color: var(--color-2);
+    background-color: var(--color-1);
+    color: var(--color-6);
     border-radius: 1rem;
-    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow-3);
 
 }
 
@@ -27,9 +27,9 @@
     margin: 0 0.5rem 0.5rem 0.5rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: var(--color-11);
+    background-color: var(--color-1);
     font-size: 1.5rem;
-    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow-3);
 
 }
 

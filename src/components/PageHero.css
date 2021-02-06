@@ -7,8 +7,9 @@
 
 .page__heading h1 {
     padding: 1rem;
-    background-color: var(--color-6);
-    color: var(--color-1);
+    background-color: var(--color-1);
+    box-shadow: var(--shadow-3);
+    color: var(--color-6);
     border-radius: 1rem;
     text-align: center;
     margin-bottom: 0.5rem;
