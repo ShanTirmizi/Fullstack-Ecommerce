@@ -18,7 +18,7 @@ const CartContent = () => {
           return (
             <>
               <CartItem key={item.id} {...item} />
-              <hr />
+              {/* <hr /> */}
             </>
           ) 
         })

@@ -34,10 +34,10 @@
 
 .cart__shopping button { 
     padding: 0.8rem 1rem;
-    background-color: var(--color-6);
-    color: var(--color-2);
+    background-color: var(--color-1);
+    color: var(--color-6);
     border-radius: 0.8rem;
     border: none;
     min-width: 10rem;
-    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow-3);
 }

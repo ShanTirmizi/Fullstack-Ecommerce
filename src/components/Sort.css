@@ -1,13 +1,13 @@
 .sortby {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-6);
-    color: var(--color-2);
+    background-color: var(--color-1);
+    color: var(--color-6);
     margin: 0 1rem;
     border-radius: 1rem;
     font-size: 1rem;
     align-items: center;
-    box-shadow: var(--shadow-2);
+    box-shadow: var(--shadow-3);
 
 
 }
@@ -21,6 +21,7 @@
     padding: 0.5rem;
     border: none;
     background-color: var(--color-3);
+    box-shadow: var(--shadow-3);
     border-radius: 1rem;
     margin: 0.4rem;
 }
@@ -35,6 +36,7 @@
     align-content: flex-start;
     text-align: start;
     justify-content: flex-start; */
+
 }
 
 

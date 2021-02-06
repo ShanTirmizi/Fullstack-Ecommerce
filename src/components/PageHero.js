@@ -7,7 +7,7 @@ const PageHero = ({ title, product }) => {
     <div>
       <div className='page__heading'>
         <h1>
-          <Link to='/' style={{textDecoration: 'none', color: 'var(--color-1)'}}>Ecom</Link>
+          <Link to='/' style={{textDecoration: 'none', color: 'var(--color-6)'}}>Ecom</Link>
           {/* {
             product && <Link to='/products'>/Products</Link>
           } */}
