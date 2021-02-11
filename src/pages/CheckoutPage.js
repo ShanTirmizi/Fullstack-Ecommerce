@@ -7,7 +7,7 @@ import './CheckoutPage.css'
 const CheckoutPage = () => {
   const { cart } = useCartContext()
   return (
-    <main>
+    <main className='checkout__page'>
       <PageHero title='Checkout' />
       <div className='page'>
         {
