@@ -5,7 +5,6 @@ import './GridView.css'
 
 const GridView = ({ products }) => {
   return (
-    <div>
       <div className="products__container">
         {
           products.map((product) => {
@@ -13,7 +12,6 @@ const GridView = ({ products }) => {
           })
         }
       </div>
-    </div>
   ) 
 }
 

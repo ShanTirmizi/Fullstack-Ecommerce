@@ -1,0 +1,14 @@
+@media only screen and (min-width: 900px) {
+    .page__top {
+        display: flex;
+        /* background-color: black; */
+        
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        justify-items: center;
+        justify-self: center;
+        max-width: 70rem;
+        margin: 1rem auto;
+    }
+}
