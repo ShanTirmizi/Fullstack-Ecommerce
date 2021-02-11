@@ -97,7 +97,7 @@ const CheckoutForm = () => {
           <h4>Redirecting to home page shortly</h4>
         </article>
       ) : (
-        <article>
+        <article className='article-stripe-total'>
             <h4>Hello, {myUser && myUser.name}</h4>
             <div className='stripe-container-total'>
               <p>Your total: </p>
