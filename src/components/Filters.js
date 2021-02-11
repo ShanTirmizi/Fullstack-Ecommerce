@@ -28,10 +28,10 @@ const Filters = () => {
   const colors = getUniqueValues(all_products, 'colors')
   // console.log(colors)
   return (
-    <div>
+    <div className="content__top">
       <div className="content">
         <form onSubmit={(e) => e.preventDefault()}>
-          <div className='heading'>
+          {/* <div className='heading'>
             <h1>Ecom</h1>
             <div className="form__control__search">
               <input
@@ -43,7 +43,7 @@ const Filters = () => {
                 onChange={updateFilters}
               />
             </div>
-          </div> 
+          </div>  */}
           {/* <div className='form__control'>
             <h5>category</h5>
             <div>
@@ -76,7 +76,7 @@ const Filters = () => {
                 }
               </select>
             </div>
-            <div className="form__control">
+            <div className="form__control top__price">
               <div className="form__control__price">
                 <h3>Price</h3>
                 <h3 className='price'>{formatPrice(price)}</h3>
