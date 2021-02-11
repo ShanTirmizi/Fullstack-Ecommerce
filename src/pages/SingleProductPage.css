@@ -36,3 +36,15 @@
     margin-left: 1rem;
 }
 
+@media only screen and (min-width: 900px) {
+    .single__product__img {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 50%;
+    }
+
+    
+}
