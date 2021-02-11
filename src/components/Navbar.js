@@ -65,6 +65,8 @@ const Nav = () => {
           )
          })
        }
+       {
+         myUser ? (
           <Link to='/checkout' className='navbar__info'>
             <BottomNavigationAction className={classes.root}
               style={{fontSize: '1.5rem'}} icon={<FaMoneyCheck />}/>
@@ -72,6 +74,17 @@ const Nav = () => {
                 Checkout
               </p>
           </Link>
+         ) : (
+          <Link onClick={loginWithRedirect} className='navbar__info'>
+            <BottomNavigationAction className={classes.root}
+              style={{fontSize: '1.5rem'}} icon={<FaMoneyCheck />}/>
+              <p className='navbar__info__p'>
+                Checkout
+              </p>
+          </Link>
+         )
+       }
+
           {
             myUser ? (
             <Link  onClick={() => {
