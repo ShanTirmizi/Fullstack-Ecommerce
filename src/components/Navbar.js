@@ -1,15 +1,9 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
-import logo from '../assets/logo.svg'
-import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
-import CartButtons from './CartButtons'
-import { useProductsContext } from '../context/products_context'
 import { useUserContext } from '../context/user_context'
-import CartTotals from './CartTotals'
 import {BottomNavigation, BottomNavigationAction, makeStyles, AppBar} from '@material-ui/core'
-import { BsFillAlarmFill, BsFillAspectRatioFill, BsFillBagFill, BsFillPersonPlusFill, BsPersonDashFill } from "react-icons/bs";
+import { BsFillPersonPlusFill, BsPersonDashFill } from "react-icons/bs";
 import './Navbar.css'
 import { FaMoneyCheck } from "react-icons/fa"
 import { useCartContext } from '../context/cart_context'
@@ -18,22 +12,14 @@ import { useCartContext } from '../context/cart_context'
 
 const useStyles = makeStyles({
   root: {
-    // justifyContent: 'space-between',
     color: 'var(--color-6)',
   },
   navbar: {
-    // margin: '0 1rem',
-    // borderRadius: '5rem',
-    // borderTopRightRadius: '0.5rem',
-    // borderTopLeftRadius: '0.5rem',
-    // boxShadow: 'var(--shadow-3)',
-
     backgroundColor: 'none',
   }
 })
 const Nav = () => {
   const classes = useStyles()
-  const { openSidebar } = useProductsContext()
     const { clearCart } = useCartContext()
   const { myUser, loginWithRedirect, logout } = useUserContext()
   const [ value, setValue] = useState(0)

@@ -7,17 +7,8 @@ const Search = () => {
     const {
         filters: {
           text,
-          category,
-          company,
-          color,
-          min_price,
-          price,
-          max_price,
-          shipping,
         },
         updateFilters,
-        clearFilters,
-        all_products,
       } = useFilterContext()
     return (
         <form onSubmit={(e) => e.preventDefault()}>

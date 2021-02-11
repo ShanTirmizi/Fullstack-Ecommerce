@@ -10,7 +10,6 @@
     background-color: var(--color-6);
     color: var(--color-2);
     border-radius: 0.5rem;
-    /* margin-bottom: 1rem; */
 }
 
 button:focus {
