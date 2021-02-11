@@ -8,9 +8,6 @@ const PageHero = ({ title, product }) => {
       <div className='page__heading'>
         <h1>
           <Link to='/' style={{textDecoration: 'none', color: 'var(--color-6)'}}>Ecom</Link>
-          {/* {
-            product && <Link to='/products'>/Products</Link>
-          } */}
         </h1>
         <h1>
           {title}

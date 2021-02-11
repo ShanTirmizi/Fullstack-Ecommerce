@@ -2,8 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-column-gap: 1rem;
-    /* justify-content: space-between; */
-
 }
 
 .heading h1 {
@@ -16,8 +14,6 @@
 }
 
 .search__input {
-     /* width: auto; */
-    /* margin-right: 1rem;  */
     width: 65%;
     background-color: var(--color-1);
     color: var(--color-6);
@@ -34,12 +30,8 @@
 .heading {
     display: flex;
     justify-content: space-between;
-    /* grid-template-columns: 1fr 1.5fr; */
-    /* grid-column-gap: 1rem; */
     width: 70rem;
     margin: 0 auto;
-    /* justify-content: space-between; */
-
 }
 
 .heading h1 {
@@ -53,13 +45,10 @@
 }
 
 .form__control__search {
-    /* width: 200rem; */
     width: 40%;
 }
 
 .search__input {
-     /* width: auto; */
-    /* margin-right: 1rem;  */
     width: 80%;
     background-color: var(--color-1);
     color: var(--color-6);

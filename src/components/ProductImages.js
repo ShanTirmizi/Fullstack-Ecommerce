@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react'
 import './ProductImages.css'
 import { useParams } from 'react-router-dom';
 import {dogData} from '../utils/constants'
@@ -16,7 +15,6 @@ const ProductImages = ({ images = [{ url:''}] }) => {
   return (
     <div className='product__images'>
       <img src={main.url === '' ?  images[0].url : main.url} alt='main pic' className='product__main' />
-      {/* <img src={images[0].url} alt='main pic' className='product__main' /> */}
       <div className="product__secondary">
         {
           images.slice(0,3).map((image, index) => {

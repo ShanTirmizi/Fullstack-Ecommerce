@@ -1,8 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
 import { useCartContext } from '../context/cart_context'
 import { Link } from 'react-router-dom'
-import CartColumns from './CartColumns'
 import CartItem from './CartItem'
 import CartTotals from './CartTotals'
 import './CartContent.css'
@@ -12,13 +10,11 @@ const CartContent = () => {
 
   return (
     <div className='cart__content'>
-      {/* <CartColumns /> */}
       {
         cart.map((item) => {
           return (
             <>
               <CartItem key={item.id} {...item} />
-              {/* <hr /> */}
             </>
           ) 
         })
