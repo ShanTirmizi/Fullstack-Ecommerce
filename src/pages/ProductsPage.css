@@ -11,4 +11,10 @@
         max-width: 70rem;
         margin: 1rem auto;
     }
+
+    .page__search {
+        max-width: 70rem;
+        margin: 1rem auto;
+
+    }
 }
