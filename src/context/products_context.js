@@ -40,8 +40,6 @@ export const ProductsProvider = ({ children }) => {
   const fetchProducts = async(url) => {
     dispatch({type: GET_PRODUCTS_BEGIN})
     try {
-      // const response = await axios.get(url)
-      // const products = response.data
       dispatch({ type: GET_PRODUCTS_SUCCESS, payload: url })
 
     } catch (error) {
@@ -52,10 +50,6 @@ export const ProductsProvider = ({ children }) => {
   const fetchSingleProduct = async(url) => {
     dispatch({type: GET_SINGLE_PRODUCT_BEGIN});
     try {
-      // const response = await axios.get(url);
-      // const singleProduct = response.data
-      // const itemPage = dogData.find((x) => x.id === id)
-      // const itemPage = url.find((x) => x.id === id)
       dispatch({type: GET_SINGLE_PRODUCT_SUCCESS, payload: url})
       
     } catch (error) {

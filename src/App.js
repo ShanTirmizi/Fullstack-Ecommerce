@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import { Navbar, Sidebar, Footer } from './components'
-import { HomePage, AboutPage, AuthWrapper, CartPage, CheckoutPage, ErrorPage, PrivateRoute, ProductsPage, SingleProductPage } from './pages/index';
+import { AboutPage, AuthWrapper, CartPage, CheckoutPage, ErrorPage, PrivateRoute, ProductsPage, SingleProductPage } from './pages/index';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Switch>
           <Route exact path='/'>
             <Redirect to='/products'>
-              <HomePage />
+              <ProductsPage />
             </Redirect>
           </Route>
           <Route exact path='/about'>

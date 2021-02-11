@@ -9,23 +9,18 @@ import {
   ProductImages,
   AddToCart,
   Stars,
-  PageHero,
 } from '../components'
-import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import './SingleProductPage.css'
 
 const SingleProductPage = () => {
   const { id } = useParams();
   const history = useHistory()
-  // const item1 = url.find((x) => x.id === id)
   const { single_product_loading: loading, single_product_error: error, single_product: item1, fetchSingleProduct, } = useProductsContext()
-  // console.log('url id >>>>',url[0])
-  const Crypto = url.find((x) => x.id === id)
-  console.log('Crypto',Crypto)
+  const SingleItem = url.find((x) => x.id === id)
 
   useEffect(() => {
-    fetchSingleProduct(Crypto)
+    fetchSingleProduct(SingleItem)
   }, [id])
 
   useEffect(() => {
@@ -49,7 +44,6 @@ const SingleProductPage = () => {
   console.log(item1)
   return (
     <div>
-      {/* <PageHero title={name} item1={item1} /> */}
       <div className='single__product__heading'>
         <Link to='/products' className='single__product__link'>
           <h3>Back to products</h3>
@@ -58,13 +52,9 @@ const SingleProductPage = () => {
 
       </div>
       <div className="single__product__center">
-        {/* <Link to='/products' className='btn'>
-          back to products
-        </Link> */}
         <div className="single__product__img">
           <ProductImages images={images} />
           <section className='content'>
-            {/* <h2>{name}</h2> */}
             <div className='single__product__price'>
               <h4>Price</h4>
               <h4> {formatPrice(price)}</h4>
