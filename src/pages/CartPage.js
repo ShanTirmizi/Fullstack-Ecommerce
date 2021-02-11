@@ -18,7 +18,7 @@ const CartPage = () => {
     )
   }
   return (
-    <main>
+    <main className='cart__main'>
       <PageHero title='Cart' />
       <div className='cart__page'>
         <CartContent />

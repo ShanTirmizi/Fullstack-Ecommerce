@@ -24,3 +24,18 @@
     width: 90%;
     text-align: center;
 }
+
+@media only screen and (min-width: 900px) {
+    .cart__page__empty {
+        width: 20%;
+        height: 10rem;
+        margin: 2rem auto;
+    }
+
+    .cart__main {
+        width: 50%;
+        margin: 2rem auto;
+    }
+
+    
+}
