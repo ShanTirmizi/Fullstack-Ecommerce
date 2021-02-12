@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import { Navbar, Sidebar, Footer } from './components'
 import { AboutPage, AuthWrapper, CartPage, CheckoutPage, ErrorPage, PrivateRoute, ProductsPage, SingleProductPage } from './pages/index';
 
-function App() {
+function App() { 
   return (
     <AuthWrapper>
       <Router>

@@ -14,7 +14,7 @@ export const UserProvider = ({ children }) => {
     <UserContext.Provider value={{ loginWithRedirect, logout, myUser }}>{children}</UserContext.Provider>
   )
 }
-// make sure use
+
 export const useUserContext = () => {
   return useContext(UserContext)
 }
