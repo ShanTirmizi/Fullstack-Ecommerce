@@ -15,6 +15,11 @@ const SingleProductPage = () => {
     single_product_error: error,
     single_product: item1,
     fetchSingleProduct,
+    // postProductApi,
+    // setProductPost,
+    // productPost,
+    // deleteProductsApi,
+    // ecomProducts,
   } = useProductsContext();
   const SingleItem = url.find((x) => x.id === id);
 
@@ -68,6 +73,26 @@ const SingleProductPage = () => {
             </div>
             <Stars stars={stars} reviews={reviews} />
             <hr />
+            {/* {ecomProducts.map((ecomProd) => {
+              return (
+                <div key={ecomProd._id}>
+                  <p>{ecomProd.name}</p>
+                  <button onClick={deleteProductsApi(ecomProd._id)}>
+                    delete
+                  </button>
+                </div>
+              );
+            })}
+            <input
+              type="text"
+              onChange={(e) => {
+                setProductPost({
+                  ...productPost,
+                  name: e.target.value,
+                });
+              }}
+            />
+            <button onClick={postProductApi}>Submit</button> */}
             <h4 className="desc">Description:</h4>
             <br />
             <p className="desc">{description}</p>
